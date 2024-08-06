@@ -1,0 +1,88 @@
+body{
+    background-color:#0f0f0f;
+    color:white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left:100px;
+    padding-top:10px;
+    padding-right:100px;
+
+}
+.title1{
+    font-size:20px;
+    word-spacing:0.4;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom: 40px;
+}
+.nav .vs a{
+    color:rgb(187, 178, 178);
+    padding-left:25px;
+    text-decoration: none;
+    font-size:18;
+}
+.nav .vs a:hover{
+    color:white;
+    transform: 0.2s;
+}
+button{
+    border-radius:4px;
+    font-size:15;
+    width:100px;
+    height:28px;
+    color:white;
+    background-color: rgb(146, 51, 146);
+}
+button:hover{
+    background-color: rgb(188, 93, 188);
+}
+.search{
+    border-style:ridge;
+    background-color:black;
+    color:white;
+    width:200px;
+    height:25px;
+    border-radius:5px;
+}
+center a{
+    color:rgba(63, 142, 245, 0.936);
+}
+center span{
+    color:rgb(187, 178, 178);
+}
+center{
+    padding-bottom:40px;
+}
+.content{
+    padding-top:100px;
+}
+.para{
+    background-color: rgba(87, 84, 84, 0.262);
+    height:38px;
+    text-align: center;
+    width:350px;
+    font-size:17;
+    border-radius: 20px;
+}
+.para p{
+    color:rgb(187, 178, 178);
+    
+}
+h2{
+    font-size:50px;
+}
+.dwnld{
+    width:300px;
+    height:50px;
+    font-size:20;
+}
+.dwnld:hover{
+    background-color: rgb(188, 93, 188)
+}
+.src a{
+    color:rgba(63, 142, 245, 0.936);
+}
+.src{
+    color:rgb(187, 178, 178);
+}
