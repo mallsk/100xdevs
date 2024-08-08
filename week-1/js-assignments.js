@@ -71,24 +71,3 @@ let user ={
 console.log("Hi",user.name,"your age is",user.age);
 
 //Output: Hi Mallikarjun your age is 22
-
-// Write a function that takes a new object as input which has name , age  and gender and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21)
-function greets(employee) {
-    let title, gender;
-    if (employee.gender.toLowerCase() === "male") {
-      title = "Mr";
-    } else if (employee.gender.toLowerCase() === "female") {
-      title = "Mrs";
-    } else {
-      title = "Others";
-    }
-    console.log("Hi", title, employee.name, "your age is", employee.age);
-  }
-const employee = {
-    name: "Mallikarjun",
-    age: 22,
-    gender: "Male",
-  };
-greets(employee);  
-
-//Output: Hi Mr Mallikarjun your age is 22
