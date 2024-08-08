@@ -71,3 +71,31 @@ let user ={
 console.log("Hi",user.name,"your age is",user.age);
 
 //Output: Hi Mallikarjun your age is 22
+
+// Write a function that takes a new object as input which has name , age  and gender and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21) and Also tell the user if they are legal to vote or not
+function greets(employee) {
+    let title, gender, age, cvote;
+    if (employee.gender.toLowerCase() === "male") {
+      title = "Mr";
+    } else if (employee.gender.toLowerCase() === "female") {
+      title = "Mrs";
+    } else {
+      title = "Others";
+    }
+    if(employee.age >= 18)
+    {
+        cvote = "Yes you can voted";
+    }
+    else{
+        cvote = "You can't voted";
+    }
+    console.log("Hi", title, employee.name, "your age is", employee.age,cvote);
+  }
+const employee = {
+    name: "Mallikarjun",
+    age: 22,
+    gender: "Male",
+  };
+greets(employee);  
+
+//Output: Hi Mr Mallikarjun your age is 22 Yes you can voted
