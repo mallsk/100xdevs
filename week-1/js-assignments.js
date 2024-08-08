@@ -74,7 +74,7 @@ console.log("Hi",user.name,"your age is",user.age);
 
 // Write a function that takes a new object as input which has name , age  and gender and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21) and Also tell the user if they are legal to vote or not
 function greets(employee) {
-    let title, gender, age, cvote;
+    let title,cvote;
     if (employee.gender.toLowerCase() === "male") {
       title = "Mr";
     } else if (employee.gender.toLowerCase() === "female") {
@@ -111,3 +111,46 @@ const even = evennumbers(numbers);
 console.log(even);    
 
 //Output: [ 2, 4, 6, 8, 10 ]
+
+// Write a function that takes an array of users as inputs and returns only the users who are more than 18 years old
+function isAdult(members) {
+    return members.filter(function (members) {
+        return members.age >= 18;
+    });
+}
+const members = [
+    {
+        name: "Mallikarjun", age: 22
+    },
+    {
+        name: "Nandeesh", age: 21
+    },
+    {
+        name: "Charli", age: 16
+    },
+    {
+        name: "Kiran", age: 15
+    }
+]
+const adults = isAdult(members);
+console.log(adults);
+
+//Output: [ { name: 'Mallikarjun', age: 22 }, { name: 'Nandeesh', age: 21 } ]
+
+// Create a function that takes an array of objects as input, and returns the users whose age > 18 and are male
+function isMale(peoples) {
+    return peoples.filter(function (peoples) {
+        return peoples.age >= 18 && peoples.gender === 'Male';
+    });
+}
+
+const peoples = [
+    { name: "Bob", age: 22, gender: "Male"},
+    { name: "Marly", age: 14, gender: "Female"},
+    { name: "RS", age: 21, gender: "Female"},
+    { name: "Charli", age: 13, gender: "Male"}
+]
+const result = isMale(peoples);
+console.log(result);
+
+//Output: [ { name: 'Bob', age: 22, gender: 'Male' } ]
