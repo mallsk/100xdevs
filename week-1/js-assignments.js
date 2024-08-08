@@ -99,3 +99,15 @@ const employee = {
 greets(employee);  
 
 //Output: Hi Mr Mallikarjun your age is 22 Yes you can voted
+
+// Write a function that takes an array of numbers as input, and returns a new array with only even values. Read about filter in JS
+function evennumbers(arr){
+    return arr.filter(function(num) {
+        return num % 2 === 0;
+      });
+}
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+const even = evennumbers(numbers);
+console.log(even);    
+
+//Output: [ 2, 4, 6, 8, 10 ]
