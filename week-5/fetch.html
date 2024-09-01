@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //recheck the code for correct syntax
+        async function sum(){
+            const a = document.getElementById('a');
+            const b = document.getElementById('b');
+            const post = await fetch("https://localhost:3001/add",{
+                method : "POST",
+                a:a,
+                b:b
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="a" placeholder="Enter FirstValue">
+    <input type="number" id="b" placeholder="Enter SecondValue">
+    <button onclick="sum()">Sum</button>
+</body>
+</html>
